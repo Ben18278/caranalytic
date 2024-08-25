@@ -3,13 +3,12 @@ import { createRoot } from 'react-dom/client';
 import { HashRouter, Route, Routes } from 'react-router-dom';
 import Dashboard from './pages/Dashboard.jsx';
 import HighlightedCarsPage from './pages/HighlightedCarsPage.jsx';
-import App from './App.jsx';
 import './index.css';
 
 const rootElement = document.getElementById('root');
 
 const router = (
-  <HashRouter>
+  <HashRouter basename="/caranalytic">
     <Routes>
       <Route path="/" element={<Dashboard />} />
       <Route path="/highlighted" element={<HighlightedCarsPage />} />
@@ -22,3 +21,5 @@ createRoot(rootElement).render(
     {router}
   </StrictMode>,
 );
+
+
