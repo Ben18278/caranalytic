@@ -1,6 +1,6 @@
-import React from 'react';
-import HighlightedCars from '../components/HighlightedCars';
-import carData from '../data/cars.json';
+import React from "react";
+import HighlightedCars from "../components/HighlightedCars";
+import carData from "../data/cars.json";
 
 const HighlightedCarsPage = () => {
   return (
