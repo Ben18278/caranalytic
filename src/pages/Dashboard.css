@@ -1,74 +1,74 @@
 .dashboard-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  width: 100%;
 }
 
 .dashboard-title {
-    font-size: 48px;
-    margin-bottom: 20px;
-    text-align: center;
+  font-size: 48px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .brand-names {
-    display: flex;
-    justify-content: space-around;
-    width: 80%;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin-bottom: 20px;
 }
 
 .brand-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .brand-name {
-    font-size: 24px; /* Increased font size for better readability */
-    font-weight: bold;
-    margin-bottom: 10px;
+  font-size: 24px; /* Increased font size for better readability */
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .models-list {
-    font-size: 18px;
-    color: #555;
-    text-align: center;
+  font-size: 18px;
+  color: #555;
+  text-align: center;
 }
 
 .model-name {
-    display: block; /* Ensures that each model appears on a new line */
-    margin-bottom: 5px; /* Adds some space between models */
+  display: block; /* Ensures that each model appears on a new line */
+  margin-bottom: 5px; /* Adds some space between models */
 }
 
 .charts-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
 }
 
 .chart {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
 }
 
 .highlighted-cars-button {
-    font-size: 24px;
-    padding: 15px 30px;
-    margin-top: 30px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  font-size: 24px;
+  padding: 15px 30px;
+  margin-top: 30px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .highlighted-cars-button:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }

@@ -1,28 +1,29 @@
-import React, { useState, useEffect } from 'react';
-import PieChartComponent from './PieChart';
-import BarChartComponent from './BarChart';
-import './HighlightedCars.css';
+import React, { useState, useEffect } from "react";
+import PieChartComponent from "./PieChart";
+import BarChartComponent from "./BarChart";
+import "./HighlightedCars.css";
 
 const HighlightedCars = ({ cars }) => {
   const [highlighted, setHighlighted] = useState([]);
 
   useEffect(() => {
-    const storedCars = JSON.parse(localStorage.getItem('highlightedCars')) || [];
+    const storedCars =
+      JSON.parse(localStorage.getItem("highlightedCars")) || [];
     setHighlighted(storedCars);
   }, []);
 
   const highlightCar = (car) => {
-    if (!highlighted.some(c => c.model === car.model)) {
+    if (!highlighted.some((c) => c.model === car.model)) {
       const updatedCars = [...highlighted, car];
       setHighlighted(updatedCars);
-      localStorage.setItem('highlightedCars', JSON.stringify(updatedCars));
+      localStorage.setItem("highlightedCars", JSON.stringify(updatedCars));
     }
   };
 
   const removeCar = (car) => {
     const updatedCars = highlighted.filter((c) => c.model !== car.model);
     setHighlighted(updatedCars);
-    localStorage.setItem('highlightedCars', JSON.stringify(updatedCars));
+    localStorage.setItem("highlightedCars", JSON.stringify(updatedCars));
   };
 
   return (

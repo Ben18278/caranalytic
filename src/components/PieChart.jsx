@@ -1,7 +1,7 @@
-import React from 'react';
-import { PieChart, Pie, Cell, Tooltip } from 'recharts';
+import React from "react";
+import { PieChart, Pie, Cell, Tooltip } from "recharts";
 
-const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
+const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"];
 
 const PieChartComponent = ({ data }) => {
   const brandSummary = data.reduce((acc, car) => {
@@ -15,7 +15,7 @@ const PieChartComponent = ({ data }) => {
   const chartData = Object.keys(brandSummary).map((brand, index) => ({
     name: brand,
     value: brandSummary[brand],
-    color: COLORS[index % COLORS.length]
+    color: COLORS[index % COLORS.length],
   }));
 
   return (
