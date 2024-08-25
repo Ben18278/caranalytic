@@ -1,6 +1,6 @@
-# React + Vite
+# Car Analytic
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This web is make to display the bar chart and pie chart of> Allow user to hightlight the brand and models of cars.
 
 Currently, two official plugins are available:
 
