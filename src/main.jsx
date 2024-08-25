@@ -8,7 +8,7 @@ import './index.css';
 const rootElement = document.getElementById('root');
 
 const router = (
-  <HashRouter basename="/caranalytic">
+  <HashRouter basename="/">
     <Routes>
       <Route path="/" element={<Dashboard />} />
       <Route path="/highlighted" element={<HighlightedCarsPage />} />
